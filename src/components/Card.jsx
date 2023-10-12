@@ -2,6 +2,7 @@ function Card (props) {
     // console.log(props.cardTitleProps);
     // console.log(props.cardBodyProps);
     // console.log(props.cardCodeProps);
+    console.log(props.cardCodeRolloverProps);
     return (
         <div className="card-column">
             <figure className="card code-card">
@@ -10,7 +11,9 @@ function Card (props) {
                     <p>{props.cardBodyProps}</p>
                 </div>
                 <pre className="code-block">
-                    <code>{props.cardCodeProps}</code>
+                    <span data-descr={props.cardCodeRolloverProps}>
+                        <code>{props.cardCodeProps}</code>
+                    </span>
                 </pre>
             </figure>
         </div>

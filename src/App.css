@@ -123,12 +123,35 @@ footer {
   margin-bottom: 1.5rem;
 }
 
-.card-column:first-child {
-  /* width: 100%; */
+.cards > .card-column:first-child {
+  flex: 1 0 100%;
 }
 
-.card-column:not(:first-child) {
-  /* flex: 1; */
+/* Keyword - Underline, black text, grab cursor */
+span[data-descr] {
+  position: relative;
+  /* text-decoration: underline;
+  color: #000; */
+  cursor: grab;
+  width: 100%;
+  height: 100%;
+}
+
+/* Position tooltip above the keyword, same color as header and nav links, no border-radius, smaller font size */
+span[data-descr]:hover::after,
+span[data-descr]:focus::after {
+  content: attr(data-descr);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  min-width: 200px;
+  border: 1px #aaaaaa solid;
+  border-radius: 8px;
+  background-color: var(--outer-space);
+  padding: 12px;
+  color: #fff;
+  font-size: 80%;
+  z-index: 1;
 }
 
 /* make each code card a flexbox column to align and justify content within it */
@@ -199,6 +222,10 @@ footer {
     max-width: 50%; 
   }
 
+  .card-column:first-child {
+    width: 100%;
+  }
+
   /* select the last child to grow to full width if it has space to grow */
   .card-column:last-child {
     flex-grow: 1;
@@ -214,5 +241,9 @@ footer {
   .card-column {
     flex: 0 0 33.333%;
     max-width: 33.333%;
+  }
+
+  .card-column:first-child {
+    width: 100%;
   }
 }

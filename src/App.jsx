@@ -15,27 +15,27 @@ function App() {
     <>
     <Header />
     <main>
-      <section className="row justify-center">
+      <section className="row justify-center cards">
         <Card cardTitleProps="Flexbox Row" cardBodyProps="Use these three properties to create a Flexbox row layout." cardCodeProps=".row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}" />
+}" cardCodeRolloverProps="Rollover #1" />
         <Card cardTitleProps="Flexbox Column" cardBodyProps="Use this to create a Flexbox column layout." cardCodeProps=".column {
   display: flex;
   flex-direction: column
-}" />
+}" cardCodeRolloverProps="Rollover #2" />
         <Card cardTitleProps="CSS Grid Layout" cardBodyProps="Build a 12-column layout using CSS Grid." cardCodeProps=".grid {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(12, 1fr);
-}" />
+}" cardCodeRolloverProps="Rollover #3" />
         <Card cardTitleProps="Linear Gradients" cardBodyProps="This will create a background linear gradient from top to bottom." cardCodeProps=".linear-gradient-background {
   background-image: linear-gradient(
     rgba(232, 102, 236, 0.3) 0%,
     rgba(232, 102, 236, 0.6) 100%
   );
-}" />
+}" cardCodeRolloverProps="Rollover #4" />
         <Card cardTitleProps="Box Transition Glow" cardBodyProps="Use transition and box shadows to glow on hover." cardCodeProps=".code-card .card-header {
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
@@ -44,11 +44,11 @@ function App() {
 .code-card:hover,
 .code-card:hover .card-header {
   box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
-}" />
+}" cardCodeRolloverProps="Rollover #5" />
         <Card cardTitleProps="Overlay Card with Title" cardBodyProps="Use position properties and negative margins to raise elements higher than their natural starting point." cardCodeProps=".card-header {
   position: relative;
   margin-top: -20px;
-}" />
+}" cardCodeRolloverProps="Rollover #6" />
         <Footer />
       </section>
     </main>
