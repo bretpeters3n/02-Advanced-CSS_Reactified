@@ -1,9 +1,19 @@
-const Header = () => {
+function Card (props) {
+    // console.log(props.cardTitleProps);
+    // console.log(props.cardBodyProps);
+    // console.log(props.cardCodeProps);
     return (
-        <div className="card-box">
-            <h2>CSS Snippet Cheatsheet</h2>
-            <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
+        <div className="card-column">
+            <figure className="card code-card">
+                <h2 className="card-header">{props.cardTitleProps}</h2>
+                <div className="card-body">
+                    <p>{props.cardBodyProps}</p>
+                </div>
+                <pre className="code-block">
+                    <code>{props.cardCodeProps}</code>
+                </pre>
+            </figure>
         </div>
     )
 }
-export default Header;
+export default Card;
