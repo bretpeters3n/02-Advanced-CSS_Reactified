@@ -31,9 +31,7 @@
     <img src="https://img.shields.io/badge/FLEXBOX-red"/>
     <img src="https://img.shields.io/badge/CssRollover-pink"/>
   <p align="center">
-    This website is a remake of my Full Stack Web Dev Bootcamp assignment '02-Advanced-CSS' done in React. This website is a static HTML website using semantic tags and minimal CSS.
-    <br />
-    I used container queries here as a replacement for media queries. In the future I will explore more container query uses.
+    This website is a remake of my Full Stack Web Dev Bootcamp assignment '02-Advanced-CSS' redone in React. This website is a static HTML website using Flexbox, variables passed as props to React components, and basic CSS rollovers.
     <br />
     <br />
     <a href="https://bretpeters3n.github.io/02-Advanced-CSS_Reactified/">View Demo</a>
